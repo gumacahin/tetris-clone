@@ -1,0 +1,112 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="Tetris game using jQuery" />
+<meta name="author" content="mvalviar" />
+<title>jQuery Tetris</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+<link href="images/favicon.gif" rel="shortcut icon" />
+<script type="text/javascript" src="jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="tetris.js"></script>
+<script type="text/javascript" src="http://widgets.digg.com/buttons.js"></script>
+</head>
+                    
+<body>
+<div id="container">
+  <div id="content">
+    <div id="left" class="pane">
+      <div class="content">
+        <h1>jQuery Tetris</h1>
+        <h2>Controls</h2>
+          <dl class="controls">
+            <dt>Up Key</dt>
+              <dd>Rotate</dd>
+            <dt>Left Key</dt>
+              <dd>Move Left</dd>
+            <dt>Right Key</dt>
+              <dd>Move Right</dd>
+            <dt>Down Key</dt>
+              <dd>Move Down</dd>
+              <dd>Pause/Resume</dd>
+          </dl>
+        <h2>About</h2>
+          <p>A simple implementation of
+          the game of <a href="http://en.wikipedia.org/wiki/tetris">Tetris</a> Using <a href="http://jquery.com">jQuery</a> JavaScript
+          library.</p>
+          <p><em>Disclaimer: I do not own Tetris in any shape, way or form</em></p>
+        <h2>Share</h2>
+        <ul class="share">
+        <li><a title="Share on Facebook" name="fb_share" type="button_count" href="http://www.facebook.com/sharer.php">Share</a><script src="http://static.ak.fbcdn.net/connect.php/js/FB.Share" type="text/javascript"></script></li>
+        <li><a title="Digg this" class="DiggThisButton DiggMedium">Digg this!</a></li>
+        <li><a title="Bookmark on delicious" href="http://delicious.com/save" onclick="window.open('http://delicious.com/save?v=5&amp;noui&amp;jump=close&amp;url='+encodeURIComponent(location.href)+'&amp;title='+encodeURIComponent(document.title), 'delicious','toolbar=no,width=550,height=550'); return false;"><img src="http://static.delicious.com/img/delicious.small.gif" height="10" width="10" alt="Delicious" />Delicious</a></li>
+        </ul>
+      </div>
+    </div> <!-- end left_pane -->
+    <div id="middle" class="pane">
+        <div id="grid_wrapper">
+          <noscript>
+            <h2>JavaScript Disabled</h2>
+            <p>This page obviously needs JavaScript to be useful.
+            Please enable javascript to play.</p>
+          </noscript>
+          <!-- <table id="grid"> -->
+        </div>
+    </div> <!--end middle_pane -->
+    <div id="right" class="pane">
+      <div class="content">
+        <div id="nextbox">
+          <strong>Next</strong>
+          <div id="next_wrapper">
+          <noscript><p>no javascript</p></noscript>
+          <!-- <table id="next"> -->
+          </div>
+        </div>
+        <dl>
+          <dt><strong>Score</strong></dt>
+            <dd class="score">0</dd>
+          <dt><strong>Level</strong></dt>
+            <dd class="level">1</dd>
+        </dl>
+        <div id="stat_box">
+          <p><strong>Status</strong>: <span class="status"></span></p>
+          <p><input type="button" class="pause_resume" value="Pause" title="pause or resume the game" /><input type="button" class="reset" value="Reset" title="reset the game and start over" /></p>
+        </div>
+        <div id="scores">
+          <h3>High Scores</h3>
+          <p>No scores yet</p>
+          <!--<table>
+          <tr><th>Name</th><th>Score</th></tr>
+          <tr><td>Marco</td><td>100</td></tr>
+          </table>-->
+        </div>
+      </div>
+    </div> <!-- end right_pane -->
+  </div> <!-- end content -->
+  <div id="footer">
+    <div class="copyright"><p>©2010 <a href="http://mvalviar.co.cc">mvalviar</a></p></div>
+    <!--<div class="wc3">
+      <a href="http://validator.w3.org/check?uri=referer"><img src="http://www.w3.org/Icons/valid-xhtml10" alt="Valid XHTML 1.0 Strict" height="31" width="88" /></a>
+      <a href="http://jigsaw.w3.org/css-validator/check/referer"><img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!" /></a>
+      <a href="http://www.co.cc/?id=182518"><img src="http://get-banner.lookup.co.cc/banner_img/cocc90_40e.gif" title="get a free domain now" alt="CO.CC:Free Domain" width="90" height="40"></a>
+    </div>-->
+  </div> <!-- end footer -->
+</div> <!-- end container -->
+<script type="text/javascript">
+//<![CDATA[
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-16920373-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+//]]>
+</script>
+</body>
+</html>

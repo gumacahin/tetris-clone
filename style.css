@@ -1,0 +1,54 @@
+* {margin:0;padding:0;}
+body{background: #000 url(images/body-bg.png) repeat-x; font: 80%/1.5 'Trebuchet MS', helvetica, arial, sans-serif; color:#787878;}
+noscript h2 {color:#cc0033;}
+.controls dt {font-weight:bold;}
+.controls dd {margin-left:20px;}
+a {text-decoration: none; color:#787878;}
+a:hover {text-decoration: underline;}
+#container {width:800px;margin:auto; background:url(images/container.png) repeat-y; padding-top:30px}
+#left {width:222px;float:left;padding-left:30px;}
+#right {width:228px;float:left;}
+#left .content {background: url(images/left.png) no-repeat;height:512px;padding:10px;}
+#right .content {background: url(images/right.png) no-repeat;height:512px;padding:5px;}
+#middle {width:249px;height:512px;float:left; background: url(images/middle.png) no-repeat; padding:13px;}
+#footer {width:800px;height:49px;background:url(images/footer.png) no-repeat;display:block; clear:both;}
+table {border-collapse:collapse;border:none;}
+tr {border:none;}
+td {background: url(images/sprites.png) no-repeat 823px 120px;width:24px;height:24px; border:none;text-indent: -999em;}
+legend {display:block; text-align:center;}
+#nextbox {width:120px;height:120px;padding-top:12px;padding-left:10px; border:none;float:left;}
+#nextbox table {width:96px; height:96px;}
+#stat_box {clear:both;}
+td span {display:none;}
+dd {margin-left:145px;}
+#grid_wrapper {border:none;float:left;margin:5px;}
+#scores {clear:both;margin-top:55px;}
+#scores td {background:none;}
+#footer {text-align:center;}
+#footer .wc3 {margin-top: 5px; text-align:right;padding-top:33px;padding-right:20px}
+.copyright * {color: #fff;}
+img {border:none;}
+ul li{display:inline; list-style:none;}
+input[type=button] { display:block;float:left;width:62px;height:26px;text-indent:-999em;border:none;}
+input:focus {outline:none;}
+.pause_resume {background:url(images/button.png) no-repeat 0 0;}
+.pause_resume:hover {background:url(images/button.png) no-repeat -62px 0;}
+#resume  {background:url(images/button.png) no-repeat  0 -26px;}
+#resume:hover {background:url(images/button.png) no-repeat  -62px -26px;}
+.reset {background:url(images/button.png) no-repeat 0 -52px;}
+.reset:hover {background:url(images/button.png) no-repeat -62px -52px;}
+
+
+/* game tetros */
+.O {background: #000000 url(images/blocks.png) no-repeat -24px -24px;}
+.I {background: #010000 url(images/blocks.png) no-repeat 0 0;}
+.J {background: #020000 url(images/blocks.png) no-repeat -24px 0;}
+.L {background: #030000 url(images/blocks.png) no-repeat 0 -24px;}
+.S {background: #040000 url(images/blocks.png) no-repeat -48px 0;}
+.Z {background: #050000 url(images/blocks.png) no-repeat -48px -24px;}
+.T {background: #060000 url(images/blocks.png) no-repeat -72px 0;}
+
+
+
+
+
